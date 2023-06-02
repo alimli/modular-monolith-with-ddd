@@ -2102,7 +2102,7 @@ Include the credentials of a test user created in the [SeedDatabase.sql](src/Dat
 **Example HTTP Request for an Access Token:**
 ```http
 POST /connect/token HTTP/1.1
-Host: localhost:5000
+Host: localhost:5001
  
 grant_type=password
 &username=testMember@mail.com

@@ -158,7 +158,7 @@ namespace CompanyName.MyMeetings.API
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                 .AddIdentityServerAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme, x =>
                 {
-                    x.Authority = "http://localhost:5000";
+                    x.Authority = "http://localhost:5001";
                     x.ApiName = "myMeetingsAPI";
                     x.RequireHttpsMetadata = false;
                 });
