@@ -274,4 +274,4 @@ UploadedFiles
 
 #Nuke working directory
 .nuke-working-directory
-logs/**
+**/logs
