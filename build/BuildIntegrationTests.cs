@@ -20,7 +20,7 @@ public partial class Build
     AbsolutePath DatabaseDirectory =>
         RootDirectory / "src" / "Database" / "CompanyName.MyMeetings.Database" / "Scripts";
 
-    const string CreateDatabaseScriptName = "CreateDatabase_Linux.sql";
+const string CreateDatabaseScriptName = "CreateDatabase_Linux.sql";
 
     const string InputFilesDirectoryName = "input-files";
 
@@ -33,7 +33,7 @@ public partial class Build
             CopyFile(createDatabaseFile, createDatabaseFileTarget, FileExistsPolicy.Overwrite);
         });
 
-    const string SqlServerPassword = "123qwe!@#QWE";
+    const string SqlServerPassword = "123qweQWEWQEWQ";
 
     const string SqlServerUser = "sa";
 
