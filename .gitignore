@@ -266,7 +266,7 @@ pub/
 .mfractor
 
 #Ignore logs folder
-[Ll]ogs
+[Ll]ogs/**
 
 #Ignore uploaded files folder
 UploadedFiles
@@ -274,4 +274,3 @@ UploadedFiles
 
 #Nuke working directory
 .nuke-working-directory
-**/logs
