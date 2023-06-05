@@ -1,0 +1,10 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "ansible.python.interpreterPath": "/opt/homebrew/opt/python@3.11/bin/python3.11"
+    }
+}

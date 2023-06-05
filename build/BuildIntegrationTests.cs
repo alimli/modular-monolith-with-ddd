@@ -48,7 +48,7 @@ const string CreateDatabaseScriptName = "CreateDatabase_Linux.sql";
                 .SetName("sql-server-db")
                 .SetImage("mcr.microsoft.com/mssql/server:2019-latest")
                 .SetEnv(
-                    $"SA_PASSWORD={SqlServerPassword}",
+                    $"MSSQL_SA_PASSWORD={SqlServerPassword}",
                     "ACCEPT_EULA=Y",
                     "MSSQL_PID=Express")
                 .SetPublish($"{SqlServerPort}:1433")
