@@ -10,7 +10,7 @@ namespace DatabaseMigrator
     {
         static int Main(string[] args)
         {
-            var logsPath = Path.Join("log", "migration-logs") ;
+            string logsPath = Path.Join("log", "migration-logs");
 
             ILogger logger = new LoggerConfiguration()
                 .WriteTo.Console()
