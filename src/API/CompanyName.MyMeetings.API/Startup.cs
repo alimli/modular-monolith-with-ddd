@@ -145,6 +145,9 @@ namespace CompanyName.MyMeetings.API
 
         private void ConfigureIdentityServer(IServiceCollection services)
         {
+#if DEBUG
+            Microsoft.IdentityModel.Logging.IdentityModelEventSource.ShowPII = true;
+#endif
             services.AddIdentityServer()
                 .AddInMemoryIdentityResources(IdentityServerConfig.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityServerConfig.GetApis())
