@@ -2127,6 +2127,15 @@ It will create following services: <br/>
 - Database Migrator
 - Application
 
+
+#### Caveat Running Docker on Windows
+If you happen to fail run Docker containers on Windows, it may be possible that line endings have been converted to Windows style during git clone.
+In order to prevent this run below command first and then clone the repository again.
+[Reference](https://stackoverflow.com/a/29045187)
+```
+git config --global core.autocrlf false
+```
+
 ### Run Integration Tests in Docker
 
 You can run all Integration Tests in Docker (exactly the same process is executed on CI) using **RunAllIntegrationTests** NUKE target:
