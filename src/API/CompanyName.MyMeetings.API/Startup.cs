@@ -151,7 +151,7 @@ namespace CompanyName.MyMeetings.API
             // FIX: https://github.com/IdentityServer/IdentityServer4/issues/501#issuecomment-377936562
             services.AddIdentityServer(options =>
             {
-                options.IssuerUri = "http://localhost";
+                options.IssuerUri = "http://localhost:5001";
             })
                 .AddInMemoryIdentityResources(IdentityServerConfig.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityServerConfig.GetApis())
@@ -165,7 +165,7 @@ namespace CompanyName.MyMeetings.API
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                 .AddIdentityServerAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme, x =>
                 {
-                    x.Authority = "http://localhost/";
+                    x.Authority = "http://localhost:5001";
                     x.ApiName = "myMeetingsAPI";
                     x.RequireHttpsMetadata = false;
                 });
