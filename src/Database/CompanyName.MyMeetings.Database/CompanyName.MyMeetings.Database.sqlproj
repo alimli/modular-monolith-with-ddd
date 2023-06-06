@@ -72,6 +72,21 @@
     <Folder Include="Scripts\Migrations" />
     <Folder Include="Scripts\Seeds" />
     <Folder Include="Scripts\Migrations\1_0_0_0\" />
+    <Folder Include="Structure\administration\" />
+    <Folder Include="Structure\administration\Tables\" />
+    <Folder Include="Structure\administration\Views\" />
+    <Folder Include="Structure\app\" />
+    <Folder Include="Structure\app\Tables\" />
+    <Folder Include="Structure\meetings\" />
+    <Folder Include="Structure\meetings\Tables\" />
+    <Folder Include="Structure\meetings\Views\" />
+    <Folder Include="Structure\payments\" />
+    <Folder Include="Structure\payments\Tables\" />
+    <Folder Include="Structure\payments\Types\" />
+    <Folder Include="Structure\Security\" />
+    <Folder Include="Structure\users\" />
+    <Folder Include="Structure\users\Tables\" />
+    <Folder Include="Structure\users\Views\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Structure\administration\Tables\InboxMessages.sql" />

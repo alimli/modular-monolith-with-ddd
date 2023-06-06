@@ -33,7 +33,7 @@ public partial class Build
             CopyFile(createDatabaseFile, createDatabaseFileTarget, FileExistsPolicy.Overwrite);
         });
 
-    const string SqlServerPassword = "123qwe!@#QWE";
+    const string SqlServerPassword = "123qweQWEWQEWQ";
 
     const string SqlServerUser = "sa";
 
@@ -48,7 +48,7 @@ public partial class Build
                 .SetName("sql-server-db")
                 .SetImage("mcr.microsoft.com/mssql/server:2019-latest")
                 .SetEnv(
-                    $"SA_PASSWORD={SqlServerPassword}",
+                    $"MSSQL_SA_PASSWORD={SqlServerPassword}",
                     "ACCEPT_EULA=Y",
                     "MSSQL_PID=Express")
                 .SetPublish($"{SqlServerPort}:1433")

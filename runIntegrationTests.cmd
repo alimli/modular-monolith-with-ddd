@@ -9,7 +9,7 @@ IF "%CONTAINER_ID%"=="" (
 	docker rm --force myMeetings-integration-db
 )
 
-docker run --rm --name myMeetings-integration-db -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=61cD4gE6!" -e "MSSQL_PID=Express" -p 1439:1433 -d mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+docker run --rm --name myMeetings-integration-db -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=61cD4gE6!" -e "MSSQL_PID=Express" -p 1439:1433 -d mcr.microsoft.com/mssql/server:2017-latest-ubuntu
 TIMEOUT 30
 docker cp ./src/Database/CompanyName.MyMeetings.Database/Scripts/CreateDatabase_Linux.sql myMeetings-integration-db:/
 docker exec -i myMeetings-integration-db sh -c "/opt/mssql-tools/bin/sqlcmd -d master -i /CreateDatabase_Linux.sql -U sa -P 61cD4gE6!"
